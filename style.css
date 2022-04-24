@@ -1,0 +1,22 @@
+#clock {
+    color: aliceblue;
+    font-size:5em;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+#loginForm, #greeting{
+    text-align: center;
+    color: aliceblue;
+    font-size:2em;
+    padding-top: 20px;
+}
+
+#geo {
+    color: aliceblue;
+    font-size:1em;
+}
