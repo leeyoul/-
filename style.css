@@ -20,3 +20,7 @@
     color: aliceblue;
     font-size:1em;
 }
+
+body {
+    background-repeat: no-repeat;
+}
