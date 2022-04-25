@@ -7,7 +7,7 @@ function onGeoOK(position){
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_Key}&units=metric`;
     fetch(url).then(response => response.json()).then(data=>{
         const weathername = data.name
-        geo.innerHTML =  `오늘은 <b>${data.weather[0].main}</b><br>행복한 하루 되길!`;
+        geo.innerHTML =  `오늘은 <b>${data.weather[0].main}</b>`;
     });
     
 }

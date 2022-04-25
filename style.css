@@ -1,23 +1,25 @@
 #clock {
     color: aliceblue;
-    font-size:5em;
-    display: inline;
+    font-size:10em;
+    text-align: center;
     width: 40%;
+    margin: 0 auto;
 }
 
 #geo {
     color: aliceblue;
-    display: inline;
     font-size:1.5em;
     flex:auto;
     text-align: right;
-    padding-top: 35px;
+    padding-top: 52px;
+    padding-right:67px;
+    margin: 0 auto;
+    
 }
 
 .top {
     width:750px;
-    margin: 0 auto;
-    display: flex;
+    
     padding-top: 100px;
 }
 
@@ -37,6 +39,8 @@
 body {
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
 }
 
 #todo-list {
