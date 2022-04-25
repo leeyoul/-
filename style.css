@@ -1,7 +1,6 @@
 #clock {
     color: aliceblue;
     font-size:5em;
-    padding-top: 50px;
     display: inline;
     width: 40%;
 }
@@ -9,13 +8,17 @@
 #geo {
     color: aliceblue;
     display: inline;
-    font-size:1em;
+    font-size:1.5em;
+    flex:auto;
     text-align: right;
+    padding-top: 35px;
 }
 
 .top {
-    width:800px;
+    width:750px;
     margin: 0 auto;
+    display: flex;
+    padding-top: 100px;
 }
 
 .hidden {
@@ -26,7 +29,7 @@
     text-align: center;
     color: aliceblue;
     font-size:2em;
-    padding-top: 20px;
+    padding-top: 47px;
 }
 
 
@@ -36,8 +39,16 @@ body {
     background-size: cover;
 }
 
-#todo-list span {
+#todo-list {
     color: aliceblue;
+    width: 700px;
+    margin: 0 auto;
+    margin-top :40px;
+    font-size: 1.5em;
+}
+
+#todo-list li{
+    padding: 10px;
 }
 
 #todo-form {
@@ -65,8 +76,5 @@ body {
     border-radius: 30px; 
 }
 
-#geo{
-    text-align: center;
-    font-size:2em;
-    padding-top: 40px;
-}
+
+
