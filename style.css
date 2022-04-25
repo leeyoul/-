@@ -2,7 +2,6 @@
     color: aliceblue;
     font-size:10em;
     text-align: center;
-    width: 40%;
     margin: 0 auto;
 }
 
@@ -17,6 +16,19 @@
     
 }
 
+
+
+
+.bottom {
+    color: aliceblue;
+    bottom:0;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding:40px;
+    box-sizing: border-box;
+}
 .top {
     width:750px;
     
@@ -37,10 +49,13 @@
 
 
 body {
+    padding: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.3);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
+    background-size: cover ;
     background-position: center;
+    background-blend-mode: darken;
 }
 
 #todo-list {
@@ -48,7 +63,7 @@ body {
     width: 700px;
     margin: 0 auto;
     margin-top :40px;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 #todo-list li{
@@ -69,17 +84,20 @@ body {
     color: aliceblue;
 }
 
-#loginForm input::placeholder {
+input::placeholder {
     color: aliceblue;
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
 
 #todo-form input {
+    color: aliceblue;
     width: 700px; 
     padding: 20px 30px;
     border:none;
     border-radius: 30px; 
+    outline: none;
+    background-color: rgba( 255, 255, 255, 0.2 );
 }
 
 #todo-list button {
@@ -87,6 +105,7 @@ body {
     color: aliceblue;
     background: transparent;
 }
+
 
 
 
