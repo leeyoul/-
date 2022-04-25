@@ -61,6 +61,8 @@ body {
     border: 0px;
     padding: 10px;
     border-bottom: solid 3px aliceblue;
+    outline: none;
+    color: aliceblue;
 }
 
 #loginForm input::placeholder {
@@ -74,6 +76,12 @@ body {
     padding: 20px 30px;
     border:none;
     border-radius: 30px; 
+}
+
+#todo-list button {
+    border:none; 
+    color: aliceblue;
+    background: transparent;
 }
 
 
