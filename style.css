@@ -32,7 +32,10 @@ ul, a{
 
 #plusbookmark:hover {
     background-color: gray;
-    transition: 0.5s;
+    transition: 0.3s;
+}
+#plusbookmark:active {
+    background-color: blue;
 }
 
 .today .day {
