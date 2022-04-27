@@ -153,6 +153,58 @@ ul, a{
     color: aliceblue;
 }
 
+#AddBookMarkDiv {
+    position: absolute;
+    width: 305px;
+    height: 141px;
+    background-color: white;
+    color: black;
+    padding: 33px;
+    border-radius: 15px;
+    box-shadow: 15px 15px 15px rgb(0 0 0 / 25%);
+    margin-top: -135px;
+    margin-left: 220px;
+}
+
+#AddBookMarkDiv span {
+    display: inline-block;
+    width: 62px;
+    margin-bottom:5px;
+    font-size: 0.8em;
+    color: #7c7c7c;
+
+}
+#AddBookMarkDiv input {
+    margin-bottom: 8px;
+    border: solid 1px #d0d0d0;
+    width: 237px;
+    height: 24px;
+}
+
+#AddBookMarkDiv button {
+    float: right;
+    width: 114px;
+    height: 32px;
+    background-color: #1550ff;
+    color: white;
+    border:0;
+    border-radius: 3px;
+    margin-top:4px;
+    transition: 0.3s;
+}
+
+#AddBookMarkDiv button:hover {
+     background-color: #262626;
+    color: white;
+    width: 130px;
+}
+
+#AddBookMarkDiv h4 {
+    margin:0;
+    margin-bottom: 14px;
+}
+
+
 #loginForm button, #deleteAll, #logoutbtn{
 
     background-color:rgba(255, 255, 255, 0.1);
