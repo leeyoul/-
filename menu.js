@@ -25,11 +25,9 @@ function logOut() {
 
 // 로그인상태 체크하고 왼쪽 세로 메뉴 로그인 상태시에 로그아웃 버튼 나타내기
 function loginCheck(){    
-    if(USERNAME_KEY === null) {
-       console.log("로그인상태가 아닙니다");
-   }else{
-       Logoutbtn.classList.remove(HIDDEN_CLASSNAME);
-   }
+    if(localStorage.getItem(USERNAME_KEY) !== null) {
+        Logoutbtn.classList.remove(HIDDEN_CLASSNAME);
+        }
 }
 
 loginCheck();
