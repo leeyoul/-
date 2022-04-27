@@ -32,7 +32,7 @@ function getDAY() {
 
 //로그아웃  이벤트
 function logOut() {
-    let logOutResult = confirm("작성된 TODO리스트가 모두 사라집니다. 정말 로그아웃 하시겠습니까?");
+    let logOutResult = confirm(`${savedUserName}님이 작성하신 <br> 모든 리스트와 북마크가 사라집니다. <br> 정말 로그아웃 하시겠습니까?`);
     if(logOutResult){
         localStorage.clear();
         window.location.reload();

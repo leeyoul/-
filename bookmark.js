@@ -43,10 +43,12 @@ function paintBookMark(bookmarkname) {
     li.id = bookmarkname.id;
     const span = document.createElement("span");
     const btn = document.createElement("button");
+    const a = document.createElement("a");
     btn.innerText ="X";
     btn.addEventListener("click", deleteBookMark)
     li.appendChild(span);
     li.appendChild(btn);
+    span.appendChild(a);
     span.innerText = bookmarkname.text;
     bookmarkUL.appendChild(li);
 }
