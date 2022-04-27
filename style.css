@@ -1,8 +1,39 @@
-ul{
+
+ul, a{
+    color: aliceblue;
     padding: 0;
-    margin: 0;    
+    margin: 0;  
+    text-decoration: none;  
 }  
 
+.bookmark-logoutbtn li {
+    border-bottom: solid 1px;
+    border-color: rgba(255, 255, 255, 0.3);
+    padding:8px;
+}
+
+.line {
+    width: 200px;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+#plusbookmark {
+    float: right;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    font-size: 25px;
+    font-weight: bold;
+    background-color:transparent;
+    color: white;
+    margin-top:-2px;
+}
+
+#plusbookmark:hover {
+    background-color: gray;
+    transition: 0.5s;
+}
 
 .today .day {
     font-size: 25px;
