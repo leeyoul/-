@@ -17,7 +17,14 @@
 }
 
 
-
+.copyright {
+    color: rgba( 255, 255, 255, 0.6 );
+    font-size: 0.5em;
+    position: absolute;
+    right: 0;
+    bottom:180px;
+    padding-right:67px;
+}
 
 
 .top {
