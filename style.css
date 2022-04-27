@@ -26,6 +26,12 @@ ul{
     padding-left:67px;
 }
 
+#menubtn {
+    background-color: Transparent;
+    color: aliceblue;
+    border: 0;
+}
+
 .openNav{
     left:0px !important ;
     transition: 1s;
@@ -123,7 +129,7 @@ body {
     background-blend-mode: darken;
     height: 100vh;
     width: 100vw;
-    
+    color: aliceblue;
 }
 
 #todo-list {

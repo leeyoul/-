@@ -5,9 +5,9 @@ const Logoutbtn = document.querySelector("#logoutbtn");
 function NavOn() {
     NAV.classList.toggle("openNav");
     if(NAV.classList.contains('openNav')){
-        menuBTN.innerHTML ="X";
+        menuBTN.innerHTML =`<span class="material-symbols-outlined">arrow_back_ios</span>`;
     }else { 
-        menuBTN.innerHTML ="메뉴열기";
+        menuBTN.innerHTML =`<span class="material-symbols-outlined">menu</span>`;
     }
 
 };
