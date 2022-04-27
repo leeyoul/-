@@ -47,13 +47,28 @@
     color: aliceblue;
 }
 
-#loginForm button {
+#loginForm button, #deleteAll{
+
     background-color:rgba(255, 255, 255, 0.1);
     color: white;
     border: solid 1px rgba(255, 255, 255, 0.1);
     font-size: 0.6em;
     width: 100px;
     padding: 15px;
+}
+
+
+#deleteAll{
+    font-size: 0.8em;
+    width: 130px;
+    margin-top: 20px;
+    float: right;
+    padding: 10px;
+}
+
+.wrap {
+    width: 700px;
+    margin: 0 auto;
 }
 
 
@@ -82,6 +97,8 @@ body {
     text-align: center;
     padding-top: 40px;
 }
+
+
 
 #loginForm input {
     background: transparent;

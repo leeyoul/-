@@ -1,6 +1,9 @@
 const todolistForm = document.querySelector("#todo-form")
 const todoInput = todolistForm.querySelector("input")
 const todolistUl = document.querySelector("#todo-list")
+const deleteAllBtn = document.querySelector("#deleteAll");
+
+
 
 let TODOs = [];
 
@@ -34,6 +37,7 @@ function paintToDo(newTodo) {
     li.appendChild(btn);
     span.innerText = newTodo.text;
     todolistUl.appendChild(li);
+    deleteAllBtn.classList.remove("hidden"); // 전체삭제버튼 나타내기
 }
 
 //TODO삭제
@@ -56,5 +60,17 @@ const calltodo = localStorage.getItem("todos");
 if(calltodo !==null) {
     const parsedToDos = JSON.parse(calltodo);
     TODOs = parsedToDos;
-    parsedToDos.forEach(paintToDo);
+    parsedToDos.forEach(paintToDo);  
+    deleteAllBtn.classList.remove("hidden"); // 전체삭제버튼 나타내기
 }
+
+
+
+//todolist 전체삭제
+
+function clearTodos() {
+	localStorage.removeItem('todos');
+    window.location.reload();
+}
+
+deleteAllBtn.addEventListener("click", clearTodos);
