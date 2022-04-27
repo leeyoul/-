@@ -2,6 +2,19 @@ ul{
     padding: 0;
     margin: 0;    
 }  
+
+.today .day {
+    font-size: 25px;
+    font-weight:800;
+}
+
+.today .DAYmessage {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.6);
+    position:absolute;
+    margin-top:9px;
+}
+
 #menu .menuicon {
     color: aliceblue;
     padding-left: 67px;
@@ -9,7 +22,11 @@ ul{
     display: inline;
     position:absolute;
     z-index: 2;
-    
+}
+
+.bookmark-logoutbtn {
+    position:absolute;
+    margin-top:80px;
 }
 
 #menu #nav {
@@ -123,7 +140,7 @@ ul{
 body {
     padding: 0;
     margin: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
     background-repeat: no-repeat;
     background-size: cover ;
     background-blend-mode: darken;

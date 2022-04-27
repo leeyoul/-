@@ -2,6 +2,7 @@ const NAV = document.querySelector("#nav");
 const menuBTN = document.querySelector("#menubtn");
 const Logoutbtn = document.querySelector("#logoutbtn");
 
+
 function NavOn() {
     NAV.classList.toggle("openNav");
     if(NAV.classList.contains('openNav')){
@@ -12,6 +13,21 @@ function NavOn() {
 
 };
 
+//요일 가져오기
+function getDAY() {
+    const DAYmessage = ["월요병 힘내봐요", 
+    "화나지만 열심히 일합시다", 
+    "일주일에 절반! 좀만 힘내요", 
+    "목빠지게 기다리는 주말~", 
+    "불타는 금요일 보내세요", 
+    "행복한 주말!", 
+    "내일 출근 실화..?"];
+    const date = new Date();
+    let options = { weekday: 'long'};
+    const getday = date.getDay();
+    const DAY = Intl.DateTimeFormat('ko-KR', options).format(getday);
+    TODAY.innerHTML=`<span class="day">오늘은 ${DAY}!</span><br><span class="DAYmessage">${DAYmessage[Number(getday)]}</span>`;    
+}
 
 
 //로그아웃  이벤트
@@ -30,6 +46,7 @@ function loginCheck(){
         }
 }
 
+getDAY();
 loginCheck();
 menuBTN.addEventListener("click", NavOn);
 Logoutbtn.addEventListener("click", logOut)

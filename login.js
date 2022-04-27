@@ -11,7 +11,7 @@ function login(event) {
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username);
     greetingname(username);
-    loginCheck();
+    loginCheck(); //로그 아웃버튼 생성 코드는 menu.js에서 확인 가능
 }
 
 const savedUserName = localStorage.getItem(USERNAME_KEY);
@@ -21,7 +21,6 @@ function greetingname(username) {
     greeting.classList.remove(HIDDEN_CLASSNAME);
     
 }
-
 
 
 if(savedUserName === null) {
