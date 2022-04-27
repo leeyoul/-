@@ -94,7 +94,7 @@ span.material-symbols-outlined {
     left:-350px;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
-    padding-top:128px;
+    padding-top:155px;
     transition: 1s;
     box-sizing: border-box;
     padding-left:67px;
@@ -360,3 +360,9 @@ html {
     color: rgba( 255, 255, 255, 0.6 );
 };
 
+
+@media screen and (max-width: 800px) {
+    #clock {
+        font-size: 4em;
+    }
+}
