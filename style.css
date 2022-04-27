@@ -220,6 +220,8 @@ body {
     color: aliceblue;
 }
 
+
+
 #todo-form input::placeholder {
     color: aliceblue;
     font-size: 1em;
@@ -235,6 +237,12 @@ body {
     outline: none;
     background-color: rgba( 255, 255, 255, 0.2 );
 }
+
+
+#todo-form:focus{
+    background-color: white;
+}
+
 
 #todo-list button {
     border:none; 
