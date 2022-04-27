@@ -11,14 +11,18 @@ function login(event) {
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username);
     greetingname(username);
+    loginCheck();
 }
+
+const savedUserName = localStorage.getItem(USERNAME_KEY);
 
 function greetingname(username) {
     greeting.innerText = `Hello, ${username}!`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
+    
 }
 
-const savedUserName = localStorage.getItem(USERNAME_KEY);
+
 
 if(savedUserName === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);
@@ -27,4 +31,5 @@ if(savedUserName === null) {
 else {
     greetingname(savedUserName);
 }
+
 

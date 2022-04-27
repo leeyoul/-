@@ -1,3 +1,38 @@
+ul{
+    padding: 0;
+    margin: 0;    
+}  
+#menu .menuicon {
+    color: aliceblue;
+    padding-left: 67px;
+    padding-top: 67px;
+    display: inline;
+    position:absolute;
+    z-index: 2;
+    
+}
+
+#menu #nav {
+    
+    z-index: 1;
+    width: 350px;
+    height: 100%;
+    left:-350px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top:128px;
+    transition: 1s;
+    box-sizing: border-box;
+    padding-left:67px;
+}
+
+.openNav{
+    left:0px !important ;
+    transition: 1s;
+}
+
+
+
 #clock {
     color: aliceblue;
     font-size:10em;
@@ -10,7 +45,7 @@
     font-size:1.5em;
     flex:auto;
     text-align: right;
-    padding-top: 52px;
+    padding-top: 67px;
     padding-right:67px;
     margin: 0 auto;
     
@@ -22,7 +57,7 @@
     font-size: 0.5em;
     position: absolute;
     right: 0;
-    bottom:180px;
+    bottom:140px;
     padding-right:67px;
 }
 
@@ -86,6 +121,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover ;
     background-blend-mode: darken;
+    height: 100vh;
+    width: 100vw;
+    
 }
 
 #todo-list {

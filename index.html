@@ -5,9 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>TODOLIST</title>
 </head>
 <body>
+    <div id="menu">
+        <ul id="nav">
+            <h2>북마크 추가하기</h2>
+            <li><a href="">북마크 1</a></li>
+            <button id="logoutbtn" class="hidden">logout</button>
+        </ul>
+        <div class="menuicon"><button id="menubtn">메뉴열기</button></div>
+    </div>
     <div id= "geo"></div>
     <div id="clock"></div>
     
@@ -23,7 +31,7 @@
         <ul id="todo-list"></ul>
         <button id="deleteAll" class="hidden">모두 지우기</button>
     </div>
-    <div class ="copyright">© 2022. yourim-lee & nomardcoder All rights reserved</div>
+    <div class ="copyright">© 2022. yourim-lee & nomadcoders All rights reserved</div>
     <div id="bottom">
             <ul id ="rollingbox">
               <li class="current"></li>
@@ -31,6 +39,7 @@
     </div>
     <script src="clock.js"></script>
     <script src="login.js"></script>
+    <script src="menu.js"></script>
     <script src="todolist.js"></script>
     <script src="randombackground.js"></script>
     <script src="geolocation.js"></script>
