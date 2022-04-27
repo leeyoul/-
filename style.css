@@ -244,6 +244,11 @@ span.material-symbols-outlined {
     padding: 15px;
 }
 
+#loginForm button, #logoutbtn:hover {
+    background-color:#1550ff;
+    border-color:#1550ff ;
+}
+
 #logoutbtn{
     font-size: 0.8em;
     margin-top: 10px;
@@ -295,7 +300,7 @@ html {
 
 
 #todo-list li:hover{
-    padding-left : 20px;
+    font-weight: 800;
 }
 
 #todo-form {
