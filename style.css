@@ -8,6 +8,11 @@ ul{
     font-weight:800;
 }
 
+#logoutbtn {
+    position: absolute;
+    bottom: 20px;
+}
+
 .today .DAYmessage {
     font-size: 17px;
     color: rgba(255, 255, 255, 0.6);
@@ -30,7 +35,6 @@ ul{
 }
 
 #menu #nav {
-    
     z-index: 1;
     width: 350px;
     height: 100%;
@@ -112,7 +116,7 @@ ul{
     color: aliceblue;
 }
 
-#loginForm button, #deleteAll{
+#loginForm button, #deleteAll, #logoutbtn{
 
     background-color:rgba(255, 255, 255, 0.1);
     color: white;
@@ -122,7 +126,11 @@ ul{
     padding: 15px;
 }
 
-
+#logoutbtn{
+    font-size: 0.8em;
+    margin-top: 10px;
+    position: relative;
+}
 #deleteAll{
     font-size: 0.8em;
     width: 130px;
