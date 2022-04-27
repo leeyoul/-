@@ -22,11 +22,10 @@ function getDAY() {
     "불타는 금요일 보내세요", 
     "행복한 주말!", 
     "내일 출근 실화..?"];
+    const DAY = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
     const date = new Date();
-    let options = { weekday: 'long'};
     const getday = date.getDay();
-    const DAY = Intl.DateTimeFormat('ko-KR', options).format(getday);
-    TODAY.innerHTML=`<span class="day">오늘은 ${DAY}!</span><br><span class="DAYmessage">${DAYmessage[Number(getday)]}</span>`;    
+    TODAY.innerHTML=`<span class="day">오늘은 ${DAY[Number(getday)-1]}!</span><br><span class="DAYmessage">${DAYmessage[Number(getday)-1]}</span>`;    
 }
 
 
