@@ -6,6 +6,8 @@ const bookmarkurl = document.querySelector("#bookmarkurl");
 const bookmarkUL = document.querySelector (".bookmark-logoutbtn ul");
 const offbookmarkBTN = document.querySelector ("#offbookmarkBTN");
 
+
+
 function addbookmark(){
     AddBookMarkDiv.classList.toggle(HIDDEN_CLASSNAME)
 }
@@ -18,7 +20,7 @@ offbookmarkBTN.addEventListener("click", addbookmark)
 plusbookmarkBTN.addEventListener("click", addbookmark)
 
 
-
+let BOOKMARKarr =[];
 
 function handlebookmarksubmit (event) {
     event.preventDefault();
@@ -28,9 +30,10 @@ function handlebookmarksubmit (event) {
     bookmarkurl.value ="";  
     const newBOOKMARKObj= {
         text: NAME,
+        url: URL,
         id: Date.now(),
     };
-    TODOs.push(newBOOKMARKObj);
+    BOOKMARKarr.push(newBOOKMARKObj);
     paintBookMark(newBOOKMARKObj);
     saveBookMark();
 }
@@ -38,19 +41,22 @@ function handlebookmarksubmit (event) {
 
 
 //북마크 추가
-function paintBookMark(bookmarkname) {
+function paintBookMark(newBOOKMARKObj) {
     const li = document.createElement("li");
-    li.id = bookmarkname.id;
+    li.id = newBOOKMARKObj.id;
+    link = newBOOKMARKObj.url;
     const span = document.createElement("span");
     const btn = document.createElement("button");
     const a = document.createElement("a");
     btn.innerText ="X";
     btn.addEventListener("click", deleteBookMark)
+    a.setAttribute("href", link);
     li.appendChild(span);
+    li.appendChild(a);
     li.appendChild(btn);
-    span.appendChild(a);
-    span.innerText = bookmarkname.text;
+    a.innerText = newBOOKMARKObj.text;
     bookmarkUL.appendChild(li);
+    offbookmark();
 }
 
 //북마크 삭제
@@ -58,16 +64,15 @@ function deleteBookMark(event) {
     const deleteli = event.target.parentElement;  
     deleteli.remove();
     TODOs = TODOs.filter((todos) => todos.id !== parseInt(deleteli.id));
-    saveTodos();
+    saveBookMark();
 }
 
 let BOOKMARKs = [];
 
-//작성된 TODOs 를 로컬에 저장
+//작성된 북마크를 로컬에 저장
 function saveBookMark() {
-    localStorage.setItem("BOOKMARKs", JSON.stringify(BOOKMARKs));
+    localStorage.setItem("BOOKMARKs", JSON.stringify(BOOKMARKarr));
 }
-
 
 
 

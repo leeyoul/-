@@ -65,7 +65,6 @@ if(calltodo !==null) {
 }
 
 
-
 //todolist 전체삭제
 
 function clearTodos() {
