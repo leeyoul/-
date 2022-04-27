@@ -48,7 +48,7 @@ function paintBookMark(newBOOKMARKObj) {
     const span = document.createElement("span");
     const btn = document.createElement("button");
     const a = document.createElement("a");
-    btn.innerText ="X";
+    btn.innerText ="delete";
     btn.addEventListener("click", deleteBookMark)
     a.setAttribute("href", link);
     li.appendChild(span);

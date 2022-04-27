@@ -16,6 +16,7 @@ span.material-symbols-outlined {
     padding:8px;
 }
 
+
 .line {
     width: 200px;
     border-color: rgba(255, 255, 255, 0.4);
@@ -41,12 +42,23 @@ span.material-symbols-outlined {
     transition: 0.3s;
 }
 #plusbookmark:active {
-    background-color: blue;
+    background-color: #1550ff;
 }
 
 .today .day {
     font-size: 25px;
     font-weight:800;
+}
+
+.bookmarklist button{
+    float: right;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    border: 0;
+    font-size: 0.7em;
+}
+.bookmarklist button:hover{
+    color: #1550ff;
 }
 
 #logoutbtn {
@@ -290,7 +302,6 @@ html {
     text-align: center;
     padding-top: 40px;
 }
-
 
 
 #loginForm input {
