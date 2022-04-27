@@ -9,6 +9,7 @@ function NavOn() {
         menuBTN.innerHTML =`<span class="material-symbols-outlined">arrow_back_ios</span>`;
     }else { 
         menuBTN.innerHTML =`<span class="material-symbols-outlined">menu</span>`;
+        AddBookMarkDiv.classList.add("hidden");
     }
 
 };
