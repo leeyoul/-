@@ -19,6 +19,7 @@ function handleToDoSubmit(event) {
     const newTodoObj= {
         text: newTodo,
         id: Date.now(),
+        done: false,
     };
     TODOs.push(newTodoObj);
     paintToDo(newTodoObj);
@@ -31,12 +32,25 @@ function paintToDo(newTodo) {
     li.id = newTodo.id;
     const span = document.createElement("span");
     const btn = document.createElement("button");
+    const input = document.createElement("input"); //체크박스추가
+    input.type ="checkbox";
+    input.id = `cb${newTodo.id}`;
+    input.classList = "check-item";
+    input.value = newTodo.id;
+    if (newTodo.done) {
+        input.checked = true;
+      }
+    const label = document.createElement("label"); //라벨추가
+    label.htmlFor = `cb${newTodo.id}`;
+    label.textContent = newTodo.text;
     btn.innerText ="X";
     btn.addEventListener("click", deleteTodo)
+    span.appendChild(input);
+    span.appendChild(label);
     li.appendChild(span);
     li.appendChild(btn);
-    span.innerText = newTodo.text;
     todolistUl.appendChild(li);
+    span.innerText = newTodo.text;
     deleteAllBtn.classList.remove("hidden"); // 전체삭제버튼 나타내기
 }
 

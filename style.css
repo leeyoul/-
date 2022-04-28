@@ -312,12 +312,21 @@ html {
     padding-top: 40px;
 }
 
+#todo-list button {
+    font-size: 1em;
+    margin-left:6px;
+    color: rgba( 255, 255, 255, 0.2 );
+}
+
+#todo-list button:hover {
+    color: white;
+}
 
 #loginForm input {
     background: transparent;
     border: 0px;
     padding: 10px;
-    border-bottom: solid 3px aliceblue;
+    border-bottom: solid 2px aliceblue;
     outline: none;
     color: aliceblue;
 }
