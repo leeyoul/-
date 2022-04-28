@@ -8,10 +8,11 @@ function onGeoOK(position){
     fetch(url).then(response => response.json()).then(data=>{
         const weathername = data.name
         geo.innerHTML =  `오늘은 <b>${data.weather[0].main}</b><br>${data.main.temp}°, ${data.name}`;
-        
-    });
     
+    });
 }
+
+
 
 function onGeoError(){
     geo.innerText = "Can't find your GEO"

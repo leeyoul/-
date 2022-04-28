@@ -15,10 +15,24 @@
             <div class="bookmark-logoutbtn">
                 <button id="logoutbtn" class="hidden">로그아웃</button>
                 <h3>BOOK MARK<button id="plusbookmark">+</button></h3>
+                <div id="AddBookMarkDiv" class="hidden">
+                    <button id="offbookmarkBTN" class="offbookmark"><span class="material-symbols-outlined">
+                        close
+                        </span></button>
+                    <form id="AddBookMarkForm">
+                        <h4>북마크를 추가해보세요!</h4>
+                        
+                        <span>북마크명</span><input id="bookmarkname" required><br>
+                        <span>URL주소</span><input id="bookmarkurl" required>
+                        <button >추가하기</button>
+                    </form>
+                </div>
                 <hr class="line">
-                <li><a href="https://nomadcoders.co/">노마드코더 강의</a></li>
-                <li><a href="https://www.youtube.com/?hl=KO/">유튜브</a></li>
-                <li><a href="https://naver.com/">네이버</a></li>
+                    <ul class="bookmarklist">
+                        <li><a href="https://nomadcoders.co/">노마드코더 강의</a></li>
+                        <li><a href="https://www.youtube.com/?hl=KO/">유튜브</a></li>
+                        <li><a href="https://naver.com/">네이버</a></li>
+                  </ul>
             </div>
         </ul>
         <div class="menuicon"><button id="menubtn"><span class="material-symbols-outlined">menu</span></button></div>
@@ -27,7 +41,7 @@
     <div id="clock"></div>
     
     <form id ="loginForm" class="hidden">
-        <input id="loginInput" placeholder="your name">
+        <input id="loginInput" placeholder="your name" required>
         <button id="login">SIGN</button>
     </form>
     <div id ="greeting" class="hidden"></div>
@@ -38,8 +52,9 @@
         <ul id="todo-list"></ul>
         <button id="deleteAll" class="hidden">모두 지우기</button>
     </div>
-    <div class ="copyright">© 2022. yourim-lee & nomadcoders All rights reserved</div>
+    
     <div id="bottom">
+        <div class ="copyright">© 2022. yourim-lee & nomadcoders All rights reserved</div>
             <ul id ="rollingbox">
               <li class="current"></li>
             </ul>
@@ -48,6 +63,7 @@
     <script src="login.js"></script>
     <script src="menu.js"></script>
     <script src="todolist.js"></script>
+    <script src="bookmark.js"></script>
     <script src="randombackground.js"></script>
     <script src="geolocation.js"></script>
     <script src="rollingRandomQuotes.js"></script>

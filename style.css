@@ -6,11 +6,16 @@ ul, a{
     text-decoration: none;  
 }  
 
+span.material-symbols-outlined {
+    font-size: 40px;
+}
+
 .bookmark-logoutbtn li {
     border-bottom: solid 1px;
     border-color: rgba(255, 255, 255, 0.3);
     padding:8px;
 }
+
 
 .line {
     width: 200px;
@@ -29,18 +34,31 @@ ul, a{
     color: white;
     margin-top:-2px;
 }
-
+#rollingbox{
+    margin:40px 0;
+}
 #plusbookmark:hover {
     background-color: gray;
     transition: 0.3s;
 }
 #plusbookmark:active {
-    background-color: blue;
+    background-color: #1550ff;
 }
 
 .today .day {
     font-size: 25px;
     font-weight:800;
+}
+
+.bookmarklist button{
+    float: right;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    border: 0;
+    font-size: 0.9em;
+}
+.bookmarklist button:hover{
+    color: #1550ff;
 }
 
 #logoutbtn {
@@ -76,7 +94,7 @@ ul, a{
     left:-350px;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
-    padding-top:128px;
+    padding-top:155px;
     transition: 1s;
     box-sizing: border-box;
     padding-left:67px;
@@ -151,6 +169,71 @@ ul, a{
     color: aliceblue;
 }
 
+#AddBookMarkDiv {
+    position: absolute;
+    width: 305px;
+    height: 141px;
+    background-color: white;
+    color: black;
+    padding: 33px;
+    border-radius: 15px;
+    box-shadow: 15px 15px 15px rgb(0 0 0 / 25%);
+    margin-top: -135px;
+    margin-left: 220px;
+}
+
+#AddBookMarkDiv span {
+    display: inline-block;
+    width: 62px;
+    margin-bottom:5px;
+    font-size: 0.8em;
+    color: #7c7c7c;
+
+}
+#AddBookMarkDiv input {
+    margin-bottom: 8px;
+    border: solid 1px #d0d0d0;
+    width: 237px;
+    height: 24px;
+}
+
+#AddBookMarkDiv button {
+    float: right;
+    width: 114px;
+    height: 32px;
+    background-color: #1550ff;
+    color: white;
+    border:0;
+    border-radius: 3px;
+    margin-top:4px;
+    transition: 0.3s;
+}
+
+#AddBookMarkDiv button:hover {
+     background-color: #262626;
+    color: white;
+    width: 130px;
+}
+
+#AddBookMarkDiv h4 {
+    margin:0;
+    margin-bottom: 14px;
+}
+
+#offbookmarkBTN.offbookmark {
+    background:transparent;
+    left:271px;
+    top:11px;
+    position: absolute;
+    color: #cfcfcf;
+    font-size: 35px;
+}
+#offbookmarkBTN.offbookmark:hover{
+    background-color: transparent;
+    width: 114px;
+}
+
+
 #loginForm button, #deleteAll, #logoutbtn{
 
     background-color:rgba(255, 255, 255, 0.1);
@@ -159,6 +242,11 @@ ul, a{
     font-size: 0.6em;
     width: 100px;
     padding: 15px;
+}
+
+#loginForm button:hover, #deleteAll:hover, #logoutbtn:hover {
+    background-color:#1550ff;
+    border-color:#1550ff ;
 }
 
 #logoutbtn{
@@ -172,6 +260,7 @@ ul, a{
     margin-top: 20px;
     float: right;
     padding: 10px;
+    margin-bottom: 190px;
 }
 
 .wrap {
@@ -187,9 +276,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover ;
     background-blend-mode: darken;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
     color: aliceblue;
+}
+
+html {
+    position: relative;
 }
 
 #todo-list {
@@ -198,17 +291,22 @@ body {
     margin: 0 auto;
     margin-top :40px;
     font-size: 1.2em;
+    
 }
 
 #todo-list li{
     padding: 10px;
 }
 
+
+#todo-list li:hover{
+    font-weight: 800;
+}
+
 #todo-form {
     text-align: center;
     padding-top: 40px;
 }
-
 
 
 #loginForm input {
@@ -254,16 +352,14 @@ body {
 
 
 #bottom {
-    color: aliceblue;
-    bottom:0;
-    margin-bottom: 0;
-    position: absolute;
     width: 100%;
+    height: 100px;
     background: rgba(0, 0, 0, 0.5);
-    padding:40px;
     box-sizing: border-box;
+    bottom:0;
+    position: absolute;
 }
-
+ 
 
 
 #bottom .current {
@@ -272,3 +368,9 @@ body {
     color: rgba( 255, 255, 255, 0.6 );
 };
 
+
+@media screen and (max-width: 800px) {
+    #clock {
+        font-size: 4em;
+    }
+}

@@ -9,6 +9,7 @@ function NavOn() {
         menuBTN.innerHTML =`<span class="material-symbols-outlined">arrow_back_ios</span>`;
     }else { 
         menuBTN.innerHTML =`<span class="material-symbols-outlined">menu</span>`;
+        AddBookMarkDiv.classList.add("hidden");
     }
 
 };
@@ -22,17 +23,16 @@ function getDAY() {
     "불타는 금요일 보내세요", 
     "행복한 주말!", 
     "내일 출근 실화..?"];
+    const DAY = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"]
     const date = new Date();
-    let options = { weekday: 'long'};
     const getday = date.getDay();
-    const DAY = Intl.DateTimeFormat('ko-KR', options).format(getday);
-    TODAY.innerHTML=`<span class="day">오늘은 ${DAY}!</span><br><span class="DAYmessage">${DAYmessage[Number(getday)]}</span>`;    
+    TODAY.innerHTML=`<span class="day">오늘은 ${DAY[Number(getday)-1]}!</span><br><span class="DAYmessage">${DAYmessage[Number(getday)-1]}</span>`;    
 }
 
 
 //로그아웃  이벤트
 function logOut() {
-    let logOutResult = confirm("작성된 TODO리스트가 모두 사라집니다. 정말 로그아웃 하시겠습니까?");
+    let logOutResult = confirm(`작성하신 모든 리스트와 북마크가 사라집니다. 정말 로그아웃 하시겠습니까?`);
     if(logOutResult){
         localStorage.clear();
         window.location.reload();
