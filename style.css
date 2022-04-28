@@ -1,3 +1,6 @@
+*{
+    font-family: 'Roboto','Noto Sans KR', sans-serif;
+}
 
 ul, a{
     color: aliceblue;
@@ -47,7 +50,7 @@ span.material-symbols-outlined {
 
 .today .day {
     font-size: 25px;
-    font-weight:800;
+    font-weight:700;
 }
 
 .bookmarklist button{
@@ -118,6 +121,7 @@ span.material-symbols-outlined {
     font-size:10em;
     text-align: center;
     margin: 0 auto;
+    font-weight: 100;
 }
 
 #geo {
@@ -300,7 +304,7 @@ html {
 
 
 #todo-list li:hover{
-    font-weight: 800;
+    font-weight: 700;
 }
 
 #todo-form {
@@ -321,9 +325,13 @@ html {
 
 
 #todo-form input::placeholder {
-    color: aliceblue;
     font-size: 1em;
+    color: aliceblue;
   }
+  
+#todo-form input::placeholder:focus {
+    color: transparent;
+}
 
 
 #todo-form input {
@@ -334,11 +342,16 @@ html {
     border-radius: 30px; 
     outline: none;
     background-color: rgba( 255, 255, 255, 0.2 );
+    font-size: 1em;
+
 }
 
 
-#todo-form:focus{
-    background-color: white;
+#todo-form input:hover{
+    background-color: rgba( 255, 255, 255, 0.8);
+    color: #262626;
+    transition: 0.2s;
+
 }
 
 
