@@ -11,7 +11,8 @@ function handdle () {
     "니가 뭔데 by.지드래곤", 
     "산다는것 그것은 치열한 전투이다 by.이유림",
     "암 온 더 넥스트 레벨 by.에스파.",
-    "창업이 살길이다. by디자인신정혜미"
+    "창업이 살길이다. by디자인신정혜미",
+    "천 리 길도 한 걸음 부터. by.노자"
 ];
     let sPick = Math.floor(Math.random() * quotes.length);
     //중복방지
